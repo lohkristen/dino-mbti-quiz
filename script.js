@@ -49,7 +49,7 @@ const questions = [
   {
   text: "when approaching a problem, i...",
   options: [
-    { text: "dive in and figure it out as you go", trait: "P" },
+    { text: "dive in and figure it out as i go", trait: "P" },
     { text: "make a plan first, i'll slowly execute it step by step", trait: "J" }
   ]
 },
