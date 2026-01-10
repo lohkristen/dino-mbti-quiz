@@ -42,7 +42,7 @@ const questions = [
   {
     text: "i like to have things…",
     options: [
-      { text: "planned and organized, got my planner with my always", trait: "J" },
+      { text: "planned and organized, got my planner with me always", trait: "J" },
       { text: "flexible and spontaneous, life is not that deep!", trait: "P" }
     ]
   },
