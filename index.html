@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>which silly dino are you?</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- START PAGE -->
+  <div id="start-page" class="page">
+    <h1>which silly dino are you?</h1>
+    <p>find out which dinosaur matches your personality</p>
+    <button id="start-btn">start!</button>
+  </div>
+
+  <!-- QUIZ PAGE -->
+  <div id="quiz-page" class="page hidden">
+    <p id="question-text">Question goes here</p>
+
+    <div id="answers">
+      <button>Answer A</button>
+      <button>Answer B</button>
+    </div>
+
+    <p id="progress">1 / 10</p>
+  </div>
+
+  <!-- RESULT PAGE -->
+  <div id="result-page" class="page hidden">
+    <img id="dino-img" src="" alt="Dinosaur">
+    <h2 id="dino-name">Dinosaur Name</h2>
+    <p id="dino-desc">Dinosaur description</p>
+    <button id="restart-btn">retake quiz</button>
+  </div>
+
+</body>
+</html>
