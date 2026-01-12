@@ -13,11 +13,13 @@
 <body>
 
   <!-- START PAGE -->
-  <div id="start-page" class="page">
-    <h1>which silly dino are you?</h1>
-    <p>find out which dinosaur matches your personality</p>
+<div id="start-page" class="page">
+  <div class="content-overlay">
+    <h1 class="title">which silly dino are you?</h1>
     <button id="start-btn">start!</button>
   </div>
+</div>
+
 
   <!-- QUIZ PAGE -->
   <div id="quiz-page" class="page hidden">
@@ -28,16 +30,52 @@
       <button>Answer B</button>
     </div>
 
-    <p id="progress">1 / 10</p>
+    <div class="quiz-controls">
+      <p id="progress">1 / 16</p>
+      <button id="back-btn" class="secondary-btn">⬅ back</button>
+    </div>
   </div>
+
+  
+  
 
   <!-- RESULT PAGE -->
   <div id="result-page" class="page hidden">
-    <img id="dino-img" src="" alt="Dinosaur">
+  <div class="result-container">
+    <img id="dino-img" src="" alt="Main Dino">
     <h2 id="dino-name">Dinosaur Name</h2>
     <p id="dino-desc">Dinosaur description</p>
-    <button id="restart-btn">retake quiz</button>
+    
+    <div class="compatibility-grid">
+      <div class="comp-group">
+        <h3>best pack mates 🦖</h3>
+        <div class="match-icons">
+          <div class="match-item">
+            <div class="circle"><img id="best-img-1" src=""></div>
+            <span id="best-name-1">Dino Name</span>
+          </div>
+          <div class="match-item">
+            <div class="circle"><img id="best-img-2" src=""></div>
+            <span id="best-name-2">Dino Name</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comp-group">
+        <h3>avoid during meteor showers ☄️</h3>
+        <div class="match-icons">
+          <div class="match-item">
+            <div class="circle"><img id="worst-img" src=""></div>
+            <span id="worst-name">Dino Name</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="restart-btn">retake</button>
   </div>
+</div>
+
 
 </body>
 </html>
