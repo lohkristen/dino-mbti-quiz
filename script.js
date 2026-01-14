@@ -11,102 +11,102 @@ let scores = {
 // Quiz questions
 const questions = [
   {
-    text: "at a party, i usually…",
+    text: "you've just discovered a hidden prehistoric valley! what's your first reaction?",
     options: [
-      { text: "talk to many people! i love making new friends", trait: "E" },
-      { text: "stick to a few close friends, it makes me feel safer", trait: "I" }
+      { text: "rush in to explore every corner immediately", trait: "E" },
+      { text: "observe from a distance and plan your route carefully", trait: "I" }
     ]
   },
   {
-    text: "if i could build the perfect nest, it would be...",
+    text: "you spot some unusual footprints in the mud. what catches your attention?",
     options: [
-      { text: "sturdy, made of local twigs, and placed in a tried-and-tested location", trait: "S" },
-      { text: "a revolutionary design in a place no dinosaur has ever lived before", trait: "N" }
+      { text: "the specific size, depth, and number of toes", trait: "S" },
+      { text: "wonder what kind of creature made them and where it might be going", trait: "N" }
     ]
   },
   {
-    text: "when approaching a problem, i...",
+    text: "A friendly dinosaur approaches! how do you want to spend time together?",
     options: [
-      { text: "dive in and figure it out as i go", trait: "P" },
-      { text: "make a plan first, i'll slowly execute it step by step", trait: "J" }
+      { text: "find a group of dinosaurs for a valley-wide adventure", trait: "E" },
+      { text: "hang out quietly, just the two of you by the river", trait: "I" }
     ]
   },
   {
-    text: "on a typical weekend, i'll rather...",
+    text: "your new dino friend seems a bit down. what do you do?",
     options: [
-      { text: "have plans with friends or be out doing something fun!", trait: "E" },
-      { text: "recharge at home with some alone me time", trait: "I" }
+      { text: "try to understand what they're feeling and comfort them", trait: "F" },
+      { text: "help them figure out what's causing the problem logically", trait: "T" }
     ]
   },
   {
-    text: "i found a mysterious, glowing footprint on the ground, i would...",
+    text: "you find an ancient dinosaur map. what interests you most?",
     options: [
-      { text: "measure the depth and size to identify exactly what made it", trait: "S" },
-      { text: "imagine what kind of magical, unknown beast might be at the end of the trail", trait: "N" }
+      { text: "the landmarks and current paths you can use now!", trait: "S" },
+      { text: "the mysteries it hints at and legends behind it", trait: "N" }
     ]
   },
   {
-    text: "when someone shares a problem with me...",
+    text: "time to build a nest! what's your approach?",
     options: [
-      { text: "i try to offer practical solutions and advice", trait: "T" },
-      { text: "listen and show empathy, i'm here to validate their feelings", trait: "F" }
+      { text: "gather materials first, then decide as you go", trait: "P" },
+      { text: "sketch a plan and organize everything before starting", trait: "J" }
     ]
   },
   {
-    text: "when learning something new, i like to learn...",
+    text: "your group of dinosaurs disagrees about which way to go. how do you help?",
     options: [
-      { text: "what's real and what works right now, i like that security", trait: "S" },
-      { text: "the possibilities and what could be, it's endless!", trait: "N" }
+      { text: "consider how each choice affects everyone's feelings", trait: "F" },
+      { text: "weigh the practical pros and cons of each route", trait: "T" }
   ]
   },
   {
-    text: "when giving feedback, i am usually...",
+    text: "a sudden rainstorm hits! what's your reaction?",
     options: [
-      { text: "more honest and direct, honesty is the best policy", trait: "T" },
-      { text: "more kind and considerate, i choose my words wisely", trait: "F" }
+      { text: "adapt and make the best of it, maybe splash around", trait: "P" },
+      { text: "you're glad you prepared a shelter earlier ", trait: "J" }
     ]
   },
   {
-    text: "my workspace is usually...",
+    text: "you've got free time in the valley. what sounds best?",
     options: [
-      { text: "neat and tidy, i love marie kondo", trait: "J" },
-      { text: "it's messy but i have everything i need!", trait: "P" }
+      { text: "joining whatever the other dinosaurs are up to", trait: "E" },
+      { text: "finding a cozy spot to relax on your own", trait: "I" }
+    ]
+  },
+  {
+    text: "you're describing the valley to a dinosaur who's never been. you focus on:",
+    options: [
+      { text: "the actual sights, sounds, and details you experienced", trait: "S" },
+      { text: "the overall vibe and what it all means to you", trait: "N" }
     ]
   },
   { 
-    text: "during conflict, i tend to…",
+    text: "the dinosaurs are planning tomorrow's activities. you prefer to:",
     options: [
-      { text: "stay calm and focus on the facts", trait: "T" },
-      { text: "listen to my emotions and feelings", trait: "F" }
+      { text: "decide now so everyone knows the plan ", trait: "J" },
+      { text: "keep options open and see how you feel tomorrow", trait: "P" }
     ]
   },
   {
-    text: "when it comes to deadlines, i...",
+    text: "as the sun sets, you think about your day. What matters most?",
     options: [
-      { text: "deadlines? i've finished it 2 days ago!", trait: "J" },
-      { text: "i usually be chasing deadlines..", trait: "P" }
+      { text: "whether the choices today felt right in your heart", trait: "F" },
+      { text: "Whether your decisions made logical sense ", trait: "T" }
     ]
   },
-  {
-    text: "a giant meteor shower is lighting up the sky! what do you do?",
-    options: [
-      { text: "run to the nearest watering hole to discuss it with the herd!", trait: "E" },
-      { text: "find a quiet, secluded cave to watch the lights in peace", trait: "I" }
-    ]
-  }
 ];
 
 const dinoMap = {
   INT: { name: "velociraptor: strategic mastermind 🧠", 
     image: "Velociraptor.png", 
     desc: "you're a strategic thinker who approaches problems with precision and intelligence. like the velociraptor, you're known for your sharp mind and ability to see patterns others miss. you prefer working independently or in small groups, and you're not afraid to challenge conventional thinking. your analytical nature makes you excellent at solving complex problems, though you might sometimes get lost in your own thoughts.",
-    best1: { name: "deinonychus", img: "Deinonychus.match.png" },
-    best2: { name: "quetzalcoatlus", img: "Quetzalcoatlus.match.png" },
+    best1: { name: "utahraptor", img: "Utahraptor.match.png" },
+    best2: { name: "stegosaurus", img: "Stegosaurus.match.png" },
     worst: { name: "t-rex", img: "Trex.match.png" }
   },
-  ENT: { name: "deinonychus: bold innovator 💡", 
-    image: "Deinonychus.png", 
-    desc: "bold and clever, you're a natural leader who thrives on intellectual challenges. like the deinonychus, you're quick on your feet and enjoy engaging others in debate and strategy. you have a talent for seeing possibilities and aren't afraid to take charge when needed. your energy and innovative thinking inspire those around you, though your directness can sometimes catch people off guard." ,
+  ENT: { name: "utahraptor: bold innovator 💡", 
+    image: "Utahraptor.png", 
+    desc: "bold and clever, you're a natural leader who thrives on intellectual challenges. like the utahraptor, you're quick on your feet and enjoy engaging others in debate and strategy. you have a talent for seeing possibilities and aren't afraid to take charge when needed. your energy and innovative thinking inspire those around you, though your directness can sometimes catch people off guard." ,
     best1: { name: "velociraptor", img: "Velociraptor.match.png" },
     best2: { name: "pteranodon", img: "Pteranodon.match.png" },
     worst: { name: "ankylosaurus", img: "Ankylosaurus.match.png" }
@@ -114,13 +114,13 @@ const dinoMap = {
   INF: { name: "pteranodon: thoughtful dreamer ✨", 
     image: "Pteranodon.png", 
     desc: "thoughtful and introspective, you soar above the chaos with a unique perspective on life. like the pteranodon, you value depth over breadth and often need time alone to recharge. you're driven by your values and have a rich inner world full of ideas and dreams. your empathy and insight make you a trusted confidant, and you're often thinking about how to make the world a better place." ,
-    best1: { name: "quetzalcoatlus", img: "Quetzalcoatlus.match.png" },
-    best2: { name: "deinonychus", img: "Deinonychus.match.png" },
+    best1: { name: "stegosaurus", img: "Stegosaurus.match.png" },
+    best2: { name: "utahraptor", img: "Utahraptor.match.png" },
     worst: { name: "t-rex", img: "Trex.match.png" }
   },
-  ENF: { name: "quetzalcoatlus: inspiring optimist 🌈", 
-    image: "Quetzalcoatlus.png",
-    desc: "charismatic and enthusiastic, you're the largest flyer in the room—impossible to ignore and full of inspiration. like the quetzalcoatlus, you have a gift for connecting with others and bringing people together around shared ideals. your warmth and creativity light up any space, and you're passionate about helping others reach their potential. you see possibilities everywhere and love exploring new ideas with friends.",
+  ENF: { name: "stegosaurus: inspiring optimist 🌈", 
+    image: "Stegosaurus.png",
+    desc: "charismatic and enthusiastic, you're the gentle giant of the room, impossible to ignore and full of inspiration. like the stegosaurus, you have a gift for connecting with others and bringing people together around shared ideals. your warmth and creativity light up any space, and you're passionate about helping others reach their potential. you see possibilities everywhere and love exploring new ideas with friends.",
     best1: { name: "pteranodon", img: "Pteranodon.match.png" },
     best2: { name: "velociraptor", img: "Velociraptor.match.png" },
     worst: { name: "ankylosaurus", img: "Ankylosaurus.match.png" }
@@ -130,7 +130,7 @@ const dinoMap = {
     desc: "steady and reliable, you're the armor-plated defender people can count on. like the ankylosaurus, you value tradition, responsibility, and taking care of the details others overlook. you're protective of those you care about and take your commitments seriously. your practical approach and strong memory make you an anchor in any group, though you prefer operating behind the scenes rather than in the spotlight.",
     best1: { name: "triceratops", img: "Triceratops.match.png" },
     best2: { name: "dilophosaurus", img: "Dilophosaurus.match.png" },
-    worst: { name: "deinonychus", img: "Deinonychus.match.png" }
+    worst: { name: "utahraptor", img: "Utahraptor.match.png" }
   },
   ESJ: { name: "triceratops: steadfast leader 👑", 
     image: "Triceratops.png", 
@@ -144,7 +144,7 @@ const dinoMap = {
     desc: "independent and adaptable, you're full of surprises beneath a quiet exterior. like the dilophosaurus, you're resourceful and prefer to observe before acting. you live in the moment and have a talent for hands-on problem-solving. whether you're creating something beautiful or fixing something broken, you value your freedom and like to do things your own way without too much fuss.",
     best1: { name: "t-rex", img: "Trex.match.png" },
     best2: { name: "ankylosaurus", img: "Ankylosaurus.match.png" },
-    worst: { name: "quetzalcoatlus", img: "Quetzalcoatlus.match.png" }
+    worst: { name: "stegosaurus", img: "Stegosaurus.match.png" }
   },
   ESP: { name: "t-rex: adventurous showstopper ⚡", 
     image: "Trex.png", 
